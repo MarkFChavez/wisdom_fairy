@@ -1,6 +1,6 @@
 class WisdomFairy
   def self.get!
-    uri = URI.parse("http://quotes.rest/qod.json")
+    uri = URI.parse("http://quotes.rest/qod.json?category=life")
     http = Net::HTTP.new(uri.host, uri.port)
     response = http.request(Net::HTTP::Get.new(uri.request_uri))
 
