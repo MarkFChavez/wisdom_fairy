@@ -11,12 +11,13 @@ puts "Getting Quote of the Day..."
 
 @client = Twilio::REST::Client.new ACCOUNT_SID, AUTH_TOKEN
 
-begin
-  @client.messages.create(
-    from: TWILIO_NUMBER,
-    to: RECIPIENTS,
-    body: QUOTE_OF_THE_DAY
-  )
-rescue Twilio::REST::RequestError => e
-  puts e.message
-end
+puts "HAHA"
+# begin
+#   @client.messages.create(
+#     from: TWILIO_NUMBER,
+#     to: RECIPIENTS,
+#     body: QUOTE_OF_THE_DAY
+#   )
+# rescue Twilio::REST::RequestError => e
+#   puts e.message
+# end
