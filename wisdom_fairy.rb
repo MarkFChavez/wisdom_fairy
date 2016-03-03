@@ -13,7 +13,7 @@ class WisdomFairy
       Quote.new(JSON.parse(response.body)["contents"]["quotes"].first)
     rescue
       quote = quotes.sample
-      Quote.new({ quote: quote.text, author: quote.author})
+      Quote.new({ quote: quote[:text], author: quote[:author]})
     end
 
   rescue Exception => e
