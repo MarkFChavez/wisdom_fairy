@@ -6,7 +6,7 @@ class WisdomFairy
       { "quote" => "It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.", "author" => "J.K. Rowling" }
     ]
 
-    uri = URI.parse("http://quotes.rest/qod.json?category=life")
+    uri = URI.parse("http://quotes.rest/qod.json")
     http = Net::HTTP.new(uri.host, uri.port)
     response = http.request(Net::HTTP::Get.new(uri.request_uri))
     begin
