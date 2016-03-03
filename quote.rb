@@ -5,6 +5,6 @@ class Quote
   end
 
   def to_s
-    "#{@text} - #{@author}"
+    "\"#{@text}\" - #{@author}"
   end
 end

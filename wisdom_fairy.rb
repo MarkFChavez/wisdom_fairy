@@ -10,3 +10,5 @@ class WisdomFairy
     puts e.message
   end
 end
+
+QUOTE_OF_THE_DAY = "#{WisdomFairy.get!}"
